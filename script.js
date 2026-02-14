@@ -1,7 +1,7 @@
 /* ================================
    🔑  API KEY HERE
 ================================ */
-const API_KEY = "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";
+const API_KEY = "";
 // OpenRouter model to use. Change this if your OpenRouter key supports a different model.
 const OPENROUTER_MODEL = "gpt-4o-mini";
 
@@ -291,3 +291,4 @@ try{
 } catch(e){
    // ignore
 }
+
