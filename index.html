@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Health Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🏥 AI Health Assistant</h1>
+
+	<div class="topControls">
+		<div class="leftControls">
+			<button id="newChatBtn" onclick="newChat()">New Chat</button>
+			<button id="clearChatBtn" onclick="clearChat()">Clear Chat</button>
+		</div>
+		<button id="themeToggle" aria-pressed="false" onclick="toggleTheme()">🌙</button>
+	</div>
+
+<!-- Tabs -->
+<div class="tabs">
+<button class="tab active" onclick="openTab('chatTab')">Health Chat</button>
+<button class="tab" onclick="openTab('bmiTab')">BMI Calculator</button>
+</div>
+
+<!-- CHAT TAB -->
+<div id="chatTab" class="tabContent active">
+
+<div class="chatbox" id="chat"></div>
+
+<div class="inputArea">
+<input type="text" id="userInput" placeholder="Describe your symptoms...">
+<button onclick="sendMessage()">Send</button>
+</div>
+
+</div>
+
+<!-- BMI TAB -->
+<div id="bmiTab" class="tabContent">
+
+<div class="bmiBox">
+<h2>BMI Calculator</h2>
+
+<div class="heightRow">
+	<input type="number" id="height" placeholder="Height (in)" step="0.1" min="0">
+	<select id="heightUnit" aria-label="Height unit">
+		<option value="in" selected>in</option>
+		<option value="m">m</option>
+	</select>
+</div>
+<input type="number" id="weight" placeholder="Weight (kg)">
+<button onclick="calculateBMI()">Calculate</button>
+
+<p id="bmiResult"></p>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
