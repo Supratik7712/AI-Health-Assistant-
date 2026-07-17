@@ -131,7 +131,9 @@ Health dashboard and analytics
 
 Wearable device integration
 
-Mobile app deployment
+Mobile app deployment.
+
+Video explanation : https://youtu.be/-QZspAmcK14?si=mJqoOeS5PSRR0qSo
 
 🤝 Contributing
 
